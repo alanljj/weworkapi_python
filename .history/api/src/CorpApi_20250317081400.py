@@ -16,7 +16,7 @@ from AbstractApi import *
 CORP_API_TYPE = {
         'GET_ACCESS_TOKEN' : ['/cgi-bin/gettoken', 'GET'],
         'USER_CREATE' 	   : ['/cgi-bin/user/create?access_token=ACCESS_TOKEN', 'POST'],
-        'USER_GET': ['/cgi-bin/user/get?access_token=ACCESS_TOKEN', 'GET'],
+        'USER_GET' 	   : ['/cgi-bin/user/get?access_token=ACCESS_TOKEN', 'GET'],
         'USER_UPDATE'      : ['/cgi-bin/user/update?access_token=ACCESS_TOKEN', 'POST'],
         'USER_DELETE' 	   : ['/cgi-bin/user/delete?access_token=ACCESS_TOKEN', 'GET'],
         'USER_BATCH_DELETE': ['/cgi-bin/user/batchdelete?access_token=ACCESS_TOKEN', 'POST'],

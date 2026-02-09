@@ -31,7 +31,7 @@ try :
                 'email' : 'zhangsan@ipp.cas.cn',
                 'department' : 1,
             })
-    print(response )
+    print response 
 
     ##
     response = api.httpCall(
@@ -39,7 +39,7 @@ try :
             { 
                 'userid' : 'zhangsan',
             })
-    print(response)
+    print response
 
     ##
     response = api.httpCall(
@@ -47,10 +47,10 @@ try :
             { 
                 'userid' : 'zhangsan',
             })
-    print(response)
+    print response
 
 except ApiException as e :
-    print(e.errCode, e.errMsg)
+    print e.errCode, e.errMsg
 
     ##
     response = api.httpCall(
@@ -58,6 +58,6 @@ except ApiException as e :
             { 
                 'userid' : 'zhangsan',
             })
-    print(response)
+    print response
 
 

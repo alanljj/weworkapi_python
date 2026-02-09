@@ -36,7 +36,7 @@ try :
                 },
                 'safe' : 0,
             })
-    print(response )
+    print response 
 except ApiException as e :
-    print(e.errCode, e.errMsg)
+    print e.errCode, e.errMsg
 

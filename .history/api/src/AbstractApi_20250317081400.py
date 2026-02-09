@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 # -*- coding:utf-8 -*-
 ##
  # Copyright (C) 2018 All rights reserved.
@@ -105,7 +105,7 @@ class AbstractApi(object) :
         realUrl = self.__appendToken(url)
 
         if DEBUG is True : 
-            print(realUrl, args)
+            print realUrl, args 
 
         return requests.post(realUrl, data = json.dumps(args, ensure_ascii = False).encode('utf-8')).json()
 
@@ -113,7 +113,7 @@ class AbstractApi(object) :
         realUrl = self.__appendToken(url)
 
         if DEBUG is True : 
-            print(realUrl)
+            print realUrl 
 
         return requests.get(realUrl).json()
 
@@ -125,7 +125,7 @@ class AbstractApi(object) :
         errCode = response.get('errcode')
         errMsg = response.get('errmsg')
 
-        if errCode == 0:
+        if errCode is 0:
             return response 
         else:
             raise ApiException(errCode, errMsg)
